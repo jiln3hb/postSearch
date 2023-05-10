@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryPochta">#1937FF</color>
+    <color name="colorPrimaryDarkPochta">#3700B3</color>
+    <color name="colorAccentPochta">#E6E8FB</color>
+
+    <color name="colorPrimaryDark">#736F6C</color>
+    <color name="colorPrimaryDarkDark">#3700B3</color>
+    <color name="colorAccentDark">#03DAC5</color>
+
+    <color name="colorPrimaryPink">#F8A6AB</color>
+    <color name="colorPrimaryDarkPink">#3700B3</color>
+    <color name="colorAccentPink">#03DAC5</color>
+
+    <color name="textColorPochta">#1937FF</color>
+    <color name="textColorDark">#736F6C</color>
+    <color name="textColorPink">#F8A6AB</color>
+</resources>

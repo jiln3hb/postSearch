@@ -1,0 +1,56 @@
+.my-alert-btn {
+    background: #E6E8FB;
+    font-size: 1em;
+    padding: 10px;
+    color: #000;
+    border: 2px solid #1937FF;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    margin-left: 2%;
+    margin-top: 5%;
+  }
+  .my-alert-btn:hover {
+    background: #1937FF;
+  }
+  
+  .alertoverlay {
+      width:100%;
+      height:100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    display:table;
+    z-index: 999;
+  }
+  
+  
+  .alert_popup {
+   
+    padding: 20px;
+    background: #E6E8FB;
+    border-radius: 5px;
+    width: 70%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .alert_popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  
+  
+  
+  @media screen and (max-width: 700px){
+   
+    .alert_content{
+      width: 100%;
+    }
+  }

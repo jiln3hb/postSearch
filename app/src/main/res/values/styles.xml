@@ -1,0 +1,13 @@
+<resources>
+
+    <style name="AppThemePochta" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">#E6E8FB</item>
+        <item name="android:windowBackground">#E6E8FB</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+</resources>

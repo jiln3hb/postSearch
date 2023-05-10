@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppThemePochta"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="-17dp"
+    tools:layout_editor_absoluteY="-46dp">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <WebView
+            android:id="@+id/webView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toTopOf="@+id/textview1"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp">
+        </WebView>
+
+        <ImageButton
+            android:id="@+id/buttonGeo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/circle_button"
+            app:srcCompat="@drawable/geo_icon_vector" />
+
+        <ImageButton
+            android:id="@+id/buttonSea"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="68dp"
+            android:background="@drawable/circle_button"
+            app:srcCompat="@drawable/search_icon_vector" />
+
+        <ImageButton
+            android:id="@+id/buttonInf"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/circle_button"
+            app:srcCompat="@drawable/letter_i_vector" />
+
+        <ImageButton
+            android:id="@+id/buttonSav"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="158dp"
+            android:background="@drawable/circle_button"
+            app:srcCompat="@drawable/save_icon_vector" />
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Введите требуемый радиус:"
+        android:textColor="#1937FF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="32dp"
+        android:max="5000"
+        android:min="100"
+        android:progress="1000"
+        android:progressTint="#1937FF"
+        android:thumbTint="#1937FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:text="1000 м"
+        android:textColor="#1937FF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
